@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5DD"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_second_number"
+        android:inputType="textPersonName"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283"
+        tools:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="106dp"
+        android:autoText="false"
+        android:background="#F8EC81"
+        android:clickable="false"
+        android:gravity="center|center_horizontal"
+        android:text="CALCULATOR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#F44336"
+        android:textColorHighlight="#673AB7"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="323dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter First number"
+        android:inputType="textPersonName"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        tools:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_Result"
+        android:layout_width="387dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:hint="Result"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701"
+        tools:textColor="#000000" />
+
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="224dp"
+        android:layout_height="67dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        tools:textSize="40sp" />
+
+    <RadioGroup
+        android:layout_width="333dp"
+        android:layout_height="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.48">
+
+        <RadioButton
+            android:id="@+id/buttonSum"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Addition"
+            android:textSize="25sp"
+            tools:textAlignment="gravity" />
+
+        <RadioButton
+            android:id="@+id/buttonDiff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Subtraction"
+            android:textSize="25sp"
+            tools:textAlignment="gravity" />
+
+        <RadioButton
+            android:id="@+id/buttonProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Multiplication"
+            android:textSize="25sp"
+            tools:textAlignment="gravity" />
+
+        <RadioButton
+            android:id="@+id/buttondivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Division"
+            android:textSize="25sp"
+            tools:textAlignment="gravity" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
